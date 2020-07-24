@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tic-tac-toe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="name-container">
+        <button class="button" id="name-btn" onclick="Game.promptNames()">CHANGE NAMES</button>
+    </div>
+    <div id="turn-message"></div>
+    <div class="container">
+        <div class="grid" id="cell-holder">
+            <div class="cell hvr-back-pulse" onmouseover="Game.elementHovered(this)" onmouseout="Game.elementHoveredOff(this)" onmousedown="Game.elementClicked(this)" id="0"></div>
+            <div class="cell hvr-back-pulse" onmouseover="Game.elementHovered(this)" onmouseout="Game.elementHoveredOff(this)" onmousedown="Game.elementClicked(this)" id="1"></div>
+            <div class="cell hvr-back-pulse" onmouseover="Game.elementHovered(this)" onmouseout="Game.elementHoveredOff(this)" onmousedown="Game.elementClicked(this)" id="2"></div>
+            <div class="cell hvr-back-pulse" onmouseover="Game.elementHovered(this)" onmouseout="Game.elementHoveredOff(this)" onmousedown="Game.elementClicked(this)" id="3"></div>
+            <div class="cell hvr-back-pulse" onmouseover="Game.elementHovered(this)" onmouseout="Game.elementHoveredOff(this)" onmousedown="Game.elementClicked(this)" id="4"></div>
+            <div class="cell hvr-back-pulse" onmouseover="Game.elementHovered(this)" onmouseout="Game.elementHoveredOff(this)" onmousedown="Game.elementClicked(this)" id="5"></div>
+            <div class="cell hvr-back-pulse" onmouseover="Game.elementHovered(this)" onmouseout="Game.elementHoveredOff(this)" onmousedown="Game.elementClicked(this)" id="6"></div>
+            <div class="cell hvr-back-pulse" onmouseover="Game.elementHovered(this)" onmouseout="Game.elementHoveredOff(this)" onmousedown="Game.elementClicked(this)" id="7"></div>
+            <div class="cell hvr-back-pulse" onmouseover="Game.elementHovered(this)" onmouseout="Game.elementHoveredOff(this)" onmousedown="Game.elementClicked(this)" id="8"></div>
+        </div>
+    </div>
+    <div>
+        <button class="button" id="reset-btn" onclick="Game.reset()">RESET</button>
+    </div>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+html {
+    text-align: center;
+}
+
+#turn-message {
+    text-align: center;
+    margin-bottom: 12px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.container {
+    background: black;
+    display: inline-block;
+    border: 10px solid black;
+    border-radius: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 160px);
+    grid-template-rows: repeat(3, 160px);
+    grid-gap: 10px;
+}
+
+.cell {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial;
+    font-size: 6rem;
+    font-weight: bold;
+    background: white;
+}
+
+@keyframes hvr-back-pulse {
+    50% {
+        background-color: rgba(165, 165, 165, 0.75);
+    }
+}
+
+.hvr-back-pulse:hover {
+    cursor: pointer;
+    animation-name: hvr-back-pulse;
+    animation-duration: 1.8s;
+    animation-delay: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: #cccccc;
+    color: white;
+}
+
+.button {
+    margin: 16px;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.25s;
+    border-radius: 4px;
+}
+
+#reset-btn {
+    display: none;
+    font-size: 24px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#name-btn {
+    display: grid;
+    align-self: flex-end;
+    font-size: 16px;
+    font-family: Arial;
+}
+
+#name-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #a0a0a0;
+    color: white;
+}
+
+.win-cell {
+    background-color: #00f0c4;
+}

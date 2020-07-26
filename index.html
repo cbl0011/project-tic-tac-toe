@@ -12,6 +12,16 @@
 <body>
     <div id="name-container">
         <button class="button" id="name-btn" onclick="Game.promptNames()">CHANGE NAMES</button>
+        <div id="bot-div">
+            <button class="button" id="bot-btn" onclick="Game.playBot()">PLAY VS BOT</button>
+            <div id="smart-switch">
+                <p>Smart </p>
+                <label class="switch">
+                    <input type="checkbox" onclick="Game.toggleSmartBot()">
+                    <span class="slider round"></span>
+                </label> 
+            </div>
+        </div>
     </div>
     <div id="turn-message"></div>
     <div class="container">

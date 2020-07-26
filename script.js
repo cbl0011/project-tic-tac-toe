@@ -351,11 +351,11 @@ const Game = (() => {
             }
         }
 
-        if (player1name.trim().toLocaleLowerCase() !== botName.toLocaleLowerCase()) {
+        if (player1name.trim().toLocaleLowerCase() === botName.toLocaleLowerCase()) {
             player1name = "Player 1";
         }
 
-        if (player2name.trim().toLocaleLowerCase() !== botName.toLocaleLowerCase()) {
+        if (player2name.trim().toLocaleLowerCase() === botName.toLocaleLowerCase()) {
             player2name = "Player 1";
         }
     }

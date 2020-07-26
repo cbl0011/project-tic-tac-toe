@@ -347,7 +347,6 @@ const Game = (() => {
             if (player2name && player1name !== player2name && player2name.length < 16 && player2name.trim().toLocaleLowerCase() !== botName.toLocaleLowerCase()) {
                 players[0].name = player1name;
                 players[1].name = player2name;
-                updatePlayerUI(curPlayer);
             }
         }
 
@@ -358,6 +357,8 @@ const Game = (() => {
         if (player2name.trim().toLocaleLowerCase() === botName.toLocaleLowerCase()) {
             player2name = "Player 1";
         }
+
+        updatePlayerUI(curPlayer);
     }
 
     const playBot = () => {
